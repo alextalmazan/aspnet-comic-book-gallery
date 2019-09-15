@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
 
 namespace ComicBookGalery.Controllers
 {
@@ -18,16 +19,9 @@ namespace ComicBookGalery.Controllers
             return View();
         }
 
-        public IActionResult Detail(string name, int numTimes)
+        public IActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
-            {
-                return Redirect("/ComicBook/Contact");
-            }
-            else
-            {
-                return Content("Hello form our Detail Result Method");
-            }
+            return View();
         }
     }
 }
