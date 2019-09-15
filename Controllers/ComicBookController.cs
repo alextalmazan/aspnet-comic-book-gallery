@@ -27,15 +27,15 @@ namespace ComicBookGalery.Controllers
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 700,
                 DescriptionHTML = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
+                Favorite = true,
                 Artists = new Artist[]
                 {
-                    new Artist() {Name="Dan Slott", Role="Script"},
-                    new Artist() {Name="Humberto Ramos", Role="Pencils"},
-                    new Artist() {Name="Victor Olazaba", Role="Links"},
-                    new Artist() {Name="Edgar Delgado", Role="Colors"},
-                    new Artist() {Name="Chris Eliopoulos", Role="Letters"}
-                }
-
+                    new Artist() { Name = "Dan Slott", Role = "Script" },
+                    new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
+                    new Artist() { Name = "Victor Olazaba", Role = "Links" },
+                    new Artist() { Name = "Edgar Delgado", Role = "Colors" },
+                    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" }
+                },
             };
          
             return View(comicBook);
