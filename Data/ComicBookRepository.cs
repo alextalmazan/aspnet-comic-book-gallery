@@ -16,6 +16,7 @@ namespace ComicBookGalery.Models
                 IssueNumber = 700,
                 DescriptionHTML = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
                 Favorite = true,
+                CoverImageFileName = "https://images-na.ssl-images-amazon.com/images/I/91l6A1h%2BsTL.jpg",
                 Artists = new Artist[]
                 {
                     new Artist() { Name = "Dan Slott", Role = "Script" },
@@ -31,6 +32,7 @@ namespace ComicBookGalery.Models
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 657,
                 DescriptionHTML = "<p><strong>FF: THREE TIE-IN.</strong> Spider-Man visits the FF for a very private wake--just for family.</p>",
+                CoverImageFileName = "https://vignette.wikia.nocookie.net/marveldatabase/images/7/70/Amazing_Spider-Man_Vol_1_657.jpg/revision/latest?cb=20110331050922",
                 Artists = new Artist[]
                     {
                         new Artist() { Name = "Dan Slott", Role = "Script" },
@@ -48,6 +50,7 @@ namespace ComicBookGalery.Models
                 SeriesTitle = "Bone",
                 IssueNumber = 50,
                 DescriptionHTML = "<p><strong>The Dungeon & The Parapet, Part 1.</strong> Thorn is discovered by Lord Tarsil and the corrupted Stickeaters and thrown into a dungeon with Fone Bone. As she sleeps, a message comes to her about the mysterious \"Crown of Horns\".</p>",
+                CoverImageFileName = "http://2.bp.blogspot.com/07mwGaaMUn76Ae_705NP-MGV1WplLMYe-SlvNew-GZMM8s0wdHW7v6HcNAht8kxQdJKOBn_bt3Lk=s1600",
                 Artists = new Artist[]
                 {
                     new Artist() { Name = "Jeff Smith", Role = "Script" },

@@ -8,10 +8,12 @@
     @foreach (var book in Model)
     {
         <div class="col-md-3">
-            <h4>@book.DisplayText</h4>
-            <img src="/Images/@book.CoverImageFileName"
-                 alt="@book.DisplayText"
-                 class="img-fluid" />
+            <h4>@Html.ActionLink(@book.DisplayText, "Detail", book)</h4>
+            <a href="@Url.Action("Detail", book)">
+                <img src="@book.CoverImageFileName"
+                     alt="@book.DisplayText"
+                     class="img-fluid" />
+            </a>
         </div>
     }
 </div>
