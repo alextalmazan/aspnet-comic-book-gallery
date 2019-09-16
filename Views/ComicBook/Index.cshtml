@@ -1,9 +1,18 @@
-﻿
+﻿@model ComicBookGalery.Models.ComicBook[];
 @{
-    ViewData["Title"] = "Comic Book";
+    ViewData["Title"] = "Comic Books";
 }
 
-<h2>Home Page</h2>
-<p>This is my Comic Book Galery</p>
-
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    @foreach (var book in Model)
+    {
+        <div class="col-md-3">
+            <h4>@book.DisplayText</h4>
+            <img src="/Images/@book.CoverImageFileName"
+                 alt="@book.DisplayText"
+                 class="img-fluid" />
+        </div>
+    }
+</div>
 

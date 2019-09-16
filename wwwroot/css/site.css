@@ -11,6 +11,9 @@ a.navbar-brand {
 -------------------------------------------------- */
 html {
   font-size: 14px;
+  color: lightgrey;
+  font-family: 'GLYPHICONS Halflings';
+  
 }
 @media (min-width: 768px) {
   html {
@@ -44,6 +47,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  color: grey;
 }
 .footer {
   position: absolute;
