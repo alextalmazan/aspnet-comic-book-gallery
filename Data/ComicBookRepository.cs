@@ -39,37 +39,42 @@ namespace ComicBookGalery.Models
                         new Artist() { Name = "Muntsa Vicente", Role = "Colors" },
                         new Artist() { Name = "Joe Caramagna", Role = "Letters" }
                     },
-                    Favorite = false
+                    Favorite = false,
+                
         },
-        new ComicBook()
-        {
-            Id = 3,
-            SeriesTitle = "Bone",
-            IssueNumber = 50,
-            DescriptionHTML = "<p><strong>The Dungeon & The Parapet, Part 1.</strong> Thorn is discovered by Lord Tarsil and the corrupted Stickeaters and thrown into a dungeon with Fone Bone. As she sleeps, a message comes to her about the mysterious \"Crown of Horns\".</p>",
-            Artists = new Artist[]
+            new ComicBook()
             {
-                new Artist() { Name = "Jeff Smith", Role = "Script" },
-                new Artist() { Name = "Jeff Smith", Role = "Pencils" },
-                new Artist() { Name = "Jeff Smith", Role = "Inks" },
-                new Artist() { Name = "Jeff Smith", Role = "Letters" }
-            },
-            Favorite = false
-            }
-        };
-        public ComicBook GetComicBook(int id)
-        {
-            ComicBook comicBookToReturn = null;
-            foreach (var comicBook in _comicBooks)
-            {
-                if (comicBook.Id == id)
+                Id = 3,
+                SeriesTitle = "Bone",
+                IssueNumber = 50,
+                DescriptionHTML = "<p><strong>The Dungeon & The Parapet, Part 1.</strong> Thorn is discovered by Lord Tarsil and the corrupted Stickeaters and thrown into a dungeon with Fone Bone. As she sleeps, a message comes to her about the mysterious \"Crown of Horns\".</p>",
+                Artists = new Artist[]
                 {
-                    comicBookToReturn = comicBook;
-
-                    break;
+                    new Artist() { Name = "Jeff Smith", Role = "Script" },
+                    new Artist() { Name = "Jeff Smith", Role = "Pencils" },
+                    new Artist() { Name = "Jeff Smith", Role = "Inks" },
+                    new Artist() { Name = "Jeff Smith", Role = "Letters" }
+                },
+                Favorite = false,
                 }
+            };
+            public ComicBook GetComicBook(int id)
+            {
+                ComicBook comicBookToReturn = null;
+                foreach (var comicBook in _comicBooks)
+                {
+                    if (comicBook.Id == id)
+                    {
+                        comicBookToReturn = comicBook;
+
+                        break;
+                    }
+                }
+                return comicBookToReturn;
             }
-            return comicBookToReturn;
-        }
+            public ComicBook[] GetComicBooks()
+            {
+                return _comicBooks;
+            }
     }
 }

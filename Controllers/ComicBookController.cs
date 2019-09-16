@@ -21,7 +21,8 @@ namespace ComicBookGalery.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var comicBooks = _comicBookRepository.GetComicBooks();
+            return View(comicBooks);
         }
         
         public IActionResult Detail(int? id)
